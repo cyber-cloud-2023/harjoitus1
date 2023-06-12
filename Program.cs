@@ -153,3 +153,18 @@ else
 {
     Console.WriteLine("Luku on pariton");
 }
+
+/*Tehtävä9
+ * Luo ohjelma, joka luo kokonaislukumuuttujan nimeltä "laskuri" 
+ * ja antaa sille alkuarvoksi 0. Toteuta silmukka, joka lisää 
+ * laskuri-muuttujaa yhdellä joka iteraatiossa. 
+ * Näytä laskuri-muuttujan arvo konsolissa jokaisen iteraation 
+ * jälkeen, kunnes laskuri on 10
+ */
+int laskuri = 0;
+while (laskuri < 10)
+{
+    //kasvatetaan yhdellä
+    laskuri++;
+    Console.WriteLine(" laskuri = " + laskuri);
+}
