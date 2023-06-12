@@ -3,7 +3,7 @@
  * Luo ohjelma, joka luo kokonaislukumuuttujan 
  * nimeltä "ika" ja antaa sille arvoksi 25. 
  * Näytä muuttujan arvo konsolissa.
- */
+ 
 int ika = 25;
 Console.WriteLine(ika);
 Console.WriteLine("Ikä = " + ika);
@@ -168,3 +168,18 @@ while (laskuri < 10)
     laskuri++;
     Console.WriteLine(" laskuri = " + laskuri);
 }
+/*Tehtävä10
+Luo ohjelma, joka laskee 10 ensimmäisen luonnollisen 
+luvun (1+2+3+...+10) summan ja tallentaa sen 
+kokonaislukumuuttujaan nimeltä "summa". 
+Näytä summa-muuttujan arvo konsolissa.
+ */
+int summa = 0;
+for(int luku=1; luku<=10; luku++)
+{
+    summa = summa+luku;
+    // tai lyhyemmin
+    //summa += luku;
+    Console.WriteLine(luku+". nyt summa="+summa);
+}
+Console.WriteLine("Lukujen summa = " + summa);
