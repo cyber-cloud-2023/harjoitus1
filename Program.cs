@@ -35,5 +35,5 @@ Console.WriteLine("Lukujen " + luku1 + " ja " + luku2 + " erotus = " + tulos);
 tulos = luku1 * luku2;
 Console.WriteLine("Lukujen " + luku1 + " ja " + luku2 + " tulo = " + tulos);
 
-float osam = luku1 / (float)luku2;
+float osam = (float)luku1 / (float)luku2;
 Console.WriteLine("Lukujen " + luku1 + " ja " + luku2 + " osamäärä = " + osam);
