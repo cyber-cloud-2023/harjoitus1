@@ -80,3 +80,49 @@ apumuuttuja = luku1;
 luku1=luku2;
 luku2 = apumuuttuja;
 Console.WriteLine("Luvut ovat " + luku1 + " ja " + luku2);
+
+//try-catch versio alkaa
+try
+{
+    Console.WriteLine("Try-catch versio");
+    Console.WriteLine("Anna eka luku");
+    luku1 = int.Parse(Console.ReadLine());
+    Console.WriteLine("Anna toka luku");
+    luku2 = int.Parse(Console.ReadLine());
+    apumuuttuja = luku1;
+    luku1 = luku2;
+    luku2 = apumuuttuja;
+    Console.WriteLine("Luvut ovat " + luku1 + " ja " + luku2);
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Jokin meni vikaan");
+    Console.WriteLine(ex.Message);
+}
+
+//try catch versio loppuu
+
+
+/*Tehtävä7
+ * Luo ohjelma, joka pyytää käyttäjää syöttämään kaksi lukua 
+ * ja tallentaa ne kokonaislukumuuttujiin nimeltä "luku1" ja "luku2". 
+ * Vaihda näiden muuttujien arvot keskenään ilman kolmatta muuttujaa 
+ * ja näytä uudet arvot konsolissa.
+*/
+try
+{
+    Console.WriteLine("Ilman apumuuttuja");
+    Console.WriteLine("Anna eka luku");
+    luku1 = int.Parse(Console.ReadLine());
+    Console.WriteLine("Anna toka luku");
+    luku2 = int.Parse(Console.ReadLine());
+    luku1 = luku1 + luku2;
+    luku2 = luku1-luku2;
+    luku1 = luku1-luku2;
+    Console.WriteLine("Luvut ovat " + luku1 + " ja " + luku2);
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Jokin meni vikaan");
+    Console.WriteLine(ex.Message);
+}
