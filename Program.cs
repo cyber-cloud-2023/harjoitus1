@@ -52,8 +52,31 @@ Console.WriteLine("Ympyrän ala=" + Math.Round(ala,2) );
  * Luo ohjelma, joka pyytää käyttäjää syöttämään nimensä ja 
  * tallentaa sen merkkijonomuuttujaan nimeltä "kayttajaNimi". 
  * Näytä tervehdysviesti konsolissa, jossa käyttäjän nimi näkyy.
- */
+*/
 Console.WriteLine("Anna nimesi");
 String kayttajaNimi;
 kayttajaNimi = Console.ReadLine();
 Console.WriteLine("Tervehdys : "+kayttajaNimi);
+
+/*Tehtävä6
+Luo ohjelma, joka pyytää käyttäjää syöttämään kaksi lukua 
+ja tallentaa ne kokonaislukumuuttujiin nimeltä "luku1" ja "luku2". 
+Vaihda näiden muuttujien arvot keskenään 
+käyttäen kolmatta muuttujaa ('apumuuttuja') ja näytä uudet arvot konsolissa
+*/
+//int luku1, luku2;
+int apumuuttuja;
+Console.WriteLine("Anna eka luku");
+//jos annat vahingossa kirjaimen, niin seuraava rivi
+//kaataa sovelluksen
+//luku1=int.Parse(Console.ReadLine());
+int.TryParse(Console.ReadLine(), out luku1);
+Console.WriteLine("Anna toinen luku");
+//luku2=int.Parse(Console.ReadLine());
+int.TryParse(Console.ReadLine(), out luku2);
+//TryParsen sijaan voisi käyttää myös try catch rakennetta
+
+apumuuttuja = luku1;
+luku1=luku2;
+luku2 = apumuuttuja;
+Console.WriteLine("Luvut ovat " + luku1 + " ja " + luku2);
