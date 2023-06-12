@@ -183,3 +183,20 @@ for(int luku=1; luku<=10; luku++)
     Console.WriteLine(luku+". nyt summa="+summa);
 }
 Console.WriteLine("Lukujen summa = " + summa);
+
+/*Tehtävä11
+ Luo ohjelma, joka pyytää käyttäjää syöttämään suorakulmion 
+pituuden ja leveyden ja tallentaa ne kokonaislukumuuttujiin 
+nimeltä "pituus" ja "leveys". Laske suorakulmion pinta-ala 
+ja ympärysmitta näiden muuttujien avulla ja näytä tulokset konsolissa.
+ */
+int pituus, leveys;
+int pintaAla, ymparysMitta;
+Console.WriteLine("Anna suorakulmion pituus");
+int.TryParse(Console.ReadLine(),out pituus);
+Console.WriteLine("Anna suorakulmion leveys");
+int.TryParse(Console.ReadLine(), out leveys);
+pintaAla = pituus * leveys;
+ymparysMitta = 2 * (pituus + leveys);
+Console.WriteLine("Suorakulmion pinta-ala = " + pintaAla);
+Console.WriteLine("Suorkulmion ympärysmitta = " + ymparysMitta);
