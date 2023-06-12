@@ -37,3 +37,23 @@ Console.WriteLine("Lukujen " + luku1 + " ja " + luku2 + " tulo = " + tulos);
 
 float osam = (float)luku1 / (float)luku2;
 Console.WriteLine("Lukujen " + luku1 + " ja " + luku2 + " osamäärä = " + osam);
+
+/*Tehtävä4
+ * Luo ohjelma, joka luo desimaalityyppisen vakion nimeltä "pi" 
+ * ja antaa sille arvoksi 3.14159. Laske ympyrän pinta-ala, 
+ * jonka säde on 5, kaavalla: ala = pi * säde * säde. Näytä tulos konsolissa.
+ */
+const double pi = 3.14159;
+double ala = pi * 5 * 5;
+Console.WriteLine("Ympyrän ala=" + ala);
+Console.WriteLine("Ympyrän ala=" + Math.Round(ala,2) );
+
+/*Tehtävä5
+ * Luo ohjelma, joka pyytää käyttäjää syöttämään nimensä ja 
+ * tallentaa sen merkkijonomuuttujaan nimeltä "kayttajaNimi". 
+ * Näytä tervehdysviesti konsolissa, jossa käyttäjän nimi näkyy.
+ */
+Console.WriteLine("Anna nimesi");
+String kayttajaNimi;
+kayttajaNimi = Console.ReadLine();
+Console.WriteLine("Tervehdys : "+kayttajaNimi);
