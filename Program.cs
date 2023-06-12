@@ -126,3 +126,30 @@ catch (Exception ex)
     Console.WriteLine("Jokin meni vikaan");
     Console.WriteLine(ex.Message);
 }
+/*Tehtävä8
+ * Luo ohjelma, joka luo totuusarvomuuttujan nimeltä "onParillinen" 
+ * ja antaa sille arvon true, jos annettu luku on parillinen, 
+ * ja false muutoin. Pyydä käyttäjää syöttämään luku ja näytä 
+ * konsolissa, onko luku parillinen vai ei.
+ */
+bool onParillinen;
+int annettuLuku;
+Console.WriteLine("Anna luku");
+int.TryParse(Console.ReadLine(), out annettuLuku);
+//Jakojäännös eli modulo on C# kielessä %
+if (annettuLuku % 2 == 0)
+{
+    onParillinen = true;
+}
+else
+{
+    onParillinen = false;
+}
+if (onParillinen)
+{
+    Console.WriteLine("Luku on parillinen");
+}
+else
+{
+    Console.WriteLine("Luku on pariton");
+}
